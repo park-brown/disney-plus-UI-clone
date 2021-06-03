@@ -482,6 +482,339 @@ const Home = () => {
 						</Grid>
 					))}
 				</Grid>
+				{/*Available devices */}
+				<Grid
+					item
+					container
+					xs={12}
+					sx={{ px: '40px', py: '60px', justifyContent: 'center', alignItems: 'flex-start' }}>
+					<Grid item xs={12}>
+						<Typography
+							variant='h4'
+							sx={{ fontFamily: 'Avenir Roman,sans-serif', color: '#f9f9f9', mb: '30px', textAlign: 'center' }}>
+							Available on your favourite devices
+						</Typography>
+					</Grid>
+					<Grid item container xs={12} spacing={4} sx={{ height: '100%' }}>
+						<Grid item md={3} sm={6} xs={12} sx={{ flexDirection: 'column', alignItems: 'center' }}>
+							<Box
+								sx={{
+									height: 0,
+									paddingBottom: '50%',
+									backgroundImage: 'url(./images/device-group-tv.png)',
+									backgroundPosition: 'center',
+									backgroundSize: 'cover',
+									backgroundRepeat: 'no-repeat'
+								}}></Box>
+
+							<Typography
+								variant='h6'
+								sx={{ fontFamily: 'Avenir Roman,sans-serif', color: '#f9f9f9', mb: '10px', textAlign: 'center' }}>
+								TV
+							</Typography>
+							<Box>
+								<Typography
+									variant='body1'
+									sx={{
+										fontFamily: 'Avenir Roman,sans-serif',
+										color: 'hsla(0,0%,75.3%,.8)',
+										mb: '6px',
+										textAlign: 'center'
+									}}>
+									Amazon Fire TV
+								</Typography>
+								<Typography
+									variant='body1'
+									sx={{
+										fontFamily: 'Avenir Roman,sans-serif',
+										color: 'hsla(0,0%,75.3%,.8)',
+										mb: '6px',
+										textAlign: 'center'
+									}}>
+									Android TV
+								</Typography>
+								<Typography
+									variant='body1'
+									sx={{
+										fontFamily: 'Avenir Roman,sans-serif',
+										color: 'hsla(0,0%,75.3%,.8)',
+										mb: '6px',
+										textAlign: 'center'
+									}}>
+									AppleTV
+								</Typography>
+								<Typography
+									variant='body1'
+									sx={{
+										fontFamily: 'Avenir Roman,sans-serif',
+										color: 'hsla(0,0%,75.3%,.8)',
+										mb: '6px',
+										textAlign: 'center'
+									}}>
+									Chromecast
+								</Typography>
+								<Typography
+									variant='body1'
+									sx={{
+										fontFamily: 'Avenir Roman,sans-serif',
+										color: 'hsla(0,0%,75.3%,.8)',
+										mb: '6px',
+										textAlign: 'center'
+									}}>
+									LG TVs
+								</Typography>
+								<Typography
+									variant='body1'
+									sx={{
+										fontFamily: 'Avenir Roman,sans-serif',
+										color: 'hsla(0,0%,75.3%,.8)',
+										mb: '6px',
+										textAlign: 'center'
+									}}>
+									Samsung
+								</Typography>
+							</Box>
+						</Grid>
+						<Grid item md={3} sm={6} xs={12} sx={{ flexDirection: 'column', alignItems: 'center' }}>
+							<Box
+								sx={{
+									height: 0,
+									paddingBottom: '50%',
+									backgroundImage: 'url(./images/device-group-computer.png)',
+									backgroundPosition: 'center',
+									backgroundSize: 'cover',
+									backgroundRepeat: 'no-repeat'
+								}}></Box>
+
+							<Typography
+								variant='h6'
+								sx={{ fontFamily: 'Avenir Roman,sans-serif', color: '#f9f9f9', mb: '10px', textAlign: 'center' }}>
+								Computer
+							</Typography>
+							<Box>
+								<Typography
+									variant='body1'
+									sx={{
+										fontFamily: 'Avenir Roman,sans-serif',
+										color: 'hsla(0,0%,75.3%,.8)',
+										mb: '6px',
+										textAlign: 'center'
+									}}>
+									Chrome OS
+								</Typography>
+								<Typography
+									variant='body1'
+									sx={{
+										fontFamily: 'Avenir Roman,sans-serif',
+										color: 'hsla(0,0%,75.3%,.8)',
+										mb: '6px',
+										textAlign: 'center'
+									}}>
+									MacOS
+								</Typography>
+								<Typography
+									variant='body1'
+									sx={{
+										fontFamily: 'Avenir Roman,sans-serif',
+										color: 'hsla(0,0%,75.3%,.8)',
+										mb: '6px',
+										textAlign: 'center'
+									}}>
+									Windows PC
+								</Typography>
+							</Box>
+						</Grid>
+						<Grid item md={3} sm={6} xs={12} sx={{ flexDirection: 'column', alignItems: 'center' }}>
+							<Box
+								sx={{
+									height: 0,
+									paddingBottom: '50%',
+									backgroundImage: 'url(./images/device-group-mobile-tablet.png)',
+									backgroundPosition: 'center',
+									backgroundSize: 'cover',
+									backgroundRepeat: 'no-repeat'
+								}}></Box>
+
+							<Typography
+								variant='h6'
+								sx={{ fontFamily: 'Avenir Roman,sans-serif', color: '#f9f9f9', mb: '10px', textAlign: 'center' }}>
+								Mobile & Tablet
+							</Typography>
+							<Box>
+								<Typography
+									variant='body1'
+									sx={{
+										fontFamily: 'Avenir Roman,sans-serif',
+										color: 'hsla(0,0%,75.3%,.8)',
+										mb: '6px',
+										textAlign: 'center'
+									}}>
+									Amazon Fire Tablets
+								</Typography>
+								<Typography
+									variant='body1'
+									sx={{
+										fontFamily: 'Avenir Roman,sans-serif',
+										color: 'hsla(0,0%,75.3%,.8)',
+										mb: '6px',
+										textAlign: 'center'
+									}}>
+									Android Phones & Tablets
+								</Typography>
+								<Typography
+									variant='body1'
+									sx={{
+										fontFamily: 'Avenir Roman,sans-serif',
+										color: 'hsla(0,0%,75.3%,.8)',
+										mb: '6px',
+										textAlign: 'center'
+									}}>
+									iPhone & iPad
+								</Typography>
+							</Box>
+						</Grid>
+						<Grid item md={3} sm={6} xs={12} sx={{ flexDirection: 'column', alignItems: 'center' }}>
+							<Box
+								sx={{
+									height: 0,
+									paddingBottom: '50%',
+									backgroundImage: 'url(./images/device-group-game-consoles.png)',
+									backgroundPosition: 'center',
+									backgroundSize: 'cover',
+									backgroundRepeat: 'no-repeat'
+								}}></Box>
+
+							<Typography
+								variant='h6'
+								sx={{ fontFamily: 'Avenir Roman,sans-serif', color: '#f9f9f9', mb: '10px', textAlign: 'center' }}>
+								Game Console
+							</Typography>
+							<Box>
+								<Typography
+									variant='body1'
+									sx={{
+										fontFamily: 'Avenir Roman,sans-serif',
+										color: 'hsla(0,0%,75.3%,.8)',
+										mb: '6px',
+										textAlign: 'center'
+									}}>
+									PS4
+								</Typography>
+								<Typography
+									variant='body1'
+									sx={{
+										fontFamily: 'Avenir Roman,sans-serif',
+										color: 'hsla(0,0%,75.3%,.8)',
+										mb: '6px',
+										textAlign: 'center'
+									}}>
+									PS5
+								</Typography>
+								<Typography
+									variant='body1'
+									sx={{
+										fontFamily: 'Avenir Roman,sans-serif',
+										color: 'hsla(0,0%,75.3%,.8)',
+										mb: '6px',
+										textAlign: 'center'
+									}}>
+									Xbox One
+								</Typography>
+								<Typography
+									variant='body1'
+									sx={{
+										fontFamily: 'Avenir Roman,sans-serif',
+										color: 'hsla(0,0%,75.3%,.8)',
+										mb: '6px',
+										textAlign: 'center'
+									}}>
+									Xbox Series X
+								</Typography>
+								<Typography
+									variant='body1'
+									sx={{
+										fontFamily: 'Avenir Roman,sans-serif',
+										color: 'hsla(0,0%,75.3%,.8)',
+										mb: '6px',
+										textAlign: 'center'
+									}}>
+									Xbox Series S
+								</Typography>
+							</Box>
+						</Grid>
+					</Grid>
+				</Grid>
+			</Grid>
+			{/*Footer */}
+			<Grid item container xs={12} spacing={2} sx={{ bgcolor: '#040714', justifyContent: 'center' }} component='footer'>
+				<Grid item xs={12} sx={{ height: 'fit-content' }}>
+					<Avatar
+						variant='square'
+						alt='logo'
+						src='./images/disney logo.svg'
+						sx={{ width: 80, height: 40, mx: 'auto' }}
+					/>
+				</Grid>
+				<Grid
+					item
+					sx={{
+						display: 'flex',
+						justifyContent: 'space-around',
+						alignItems: 'center',
+						height: 'fit-content',
+						flexWrap: 'wrap'
+					}}
+					md={8}
+					sm={10}
+					xs={12}>
+					<Typography
+						variant='caption'
+						sx={{ fontFamily: 'Avenir Roman,sans-serif', color: 'hsla(0,0%,75.3%,.8)', textAlign: 'center' }}>
+						Subscriber Agreement
+					</Typography>
+					<Typography
+						variant='caption'
+						sx={{ fontFamily: 'Avenir Roman,sans-serif', color: 'hsla(0,0%,75.3%,.8)', textAlign: 'center' }}>
+						Privacy policy
+					</Typography>
+					<Typography
+						variant='caption'
+						sx={{ fontFamily: 'Avenir Roman,sans-serif', color: 'hsla(0,0%,75.3%,.8)', textAlign: 'center' }}>
+						Supplemental Privacy Policy
+					</Typography>
+					<Typography
+						variant='caption'
+						sx={{ fontFamily: 'Avenir Roman,sans-serif', color: 'hsla(0,0%,75.3%,.8)', textAlign: 'center' }}>
+						Interest-Based Ads
+					</Typography>
+
+					<Typography
+						variant='caption'
+						sx={{ fontFamily: 'Avenir Roman,sans-serif', color: 'hsla(0,0%,75.3%,.8)', textAlign: 'center' }}>
+						Supported Devices
+					</Typography>
+					<Typography
+						variant='caption'
+						sx={{ fontFamily: 'Avenir Roman,sans-serif', color: 'hsla(0,0%,75.3%,.8)', textAlign: 'center' }}>
+						Help
+					</Typography>
+					<Typography
+						variant='caption'
+						sx={{ fontFamily: 'Avenir Roman,sans-serif', color: 'hsla(0,0%,75.3%,.8)', textAlign: 'center' }}>
+						About us
+					</Typography>
+				</Grid>
+				<Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center' }}>
+					<Typography
+						variant='caption'
+						sx={{
+							fontFamily: 'Avenir Roman,sans-serif',
+							color: 'hsla(0,0%,75.3%,.8)',
+							textAlign: 'center'
+						}}>
+						© 2021 Disney and its related entities. All Rights Reserved.
+					</Typography>
+				</Grid>
 			</Grid>
 		</Grid>
 	);
