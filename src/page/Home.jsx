@@ -27,7 +27,8 @@ const Home = () => {
 							display: 'flex',
 							flexDirection: 'column',
 							alignItems: { md: 'flex-start', sm: 'center', xs: 'center' },
-
+							height: { md: '90vh' },
+							justifyContent: { md: 'space-around' },
 							textAlign: { xs: 'center' },
 							mt: { md: '5%', sm: '40%', xs: '80px' },
 							ml: { md: '0px', sm: '0px', xs: '0px' },
@@ -50,7 +51,7 @@ const Home = () => {
 						<Box
 							sx={{
 								alignSelf: 'stretch',
-								mb: '20px',
+
 								display: 'flex',
 								flexDirection: { md: 'row', sm: 'column', xs: 'column' },
 								alignItems: 'center',
@@ -204,7 +205,7 @@ const Home = () => {
 							right: 0,
 							left: 0,
 
-							height: '200%',
+							height: '100%',
 							zIndex: -1
 						}}>
 						<Box
@@ -212,12 +213,108 @@ const Home = () => {
 								backgroundImage: `url('https://cannonball-cdn.bamgrid.com/assets/originals/Hero_Desktop_Cruella_Payoff_V2_en-US_(1).jpg')`,
 								height: '100%',
 								backgroundPosition: 'top',
-								backgroundSize: '100%',
+								backgroundSize: 'cover',
 								backgroundRepeat: 'no-repeat',
 								overflow: 'hidden'
 							}}></Box>
 					</Box>
 				)}
+			</Grid>
+			<Grid
+				item
+				container
+				md={12}
+				sm={12}
+				xs={12}
+				sx={{
+					display: 'flex',
+					height: '100%',
+
+					flexDirection: { md: 'row', sm: 'row', xs: 'row' },
+
+					alignItems: { md: 'center', sm: 'center', xs: 'center' },
+					backgroundColor: '#040714',
+					maxWidth: '1440px',
+					my: { md: 'auto' },
+					p: { md: '40px', xs: '20px' }
+				}}>
+				<Grid
+					item
+					md={6}
+					sm={12}
+					xs={12}
+					sx={{
+						display: 'flex',
+						alignItems: 'center',
+						justifyContent: 'center',
+						order: { xs: 2, md: 1 },
+						p: { md: 0, sm: '40px', xs: '20px' }
+					}}>
+					<Box
+						sx={{
+							backgroundImage: 'url(./images/SideAlign_Desktop_Cruella_en-US-1.png)',
+							backgroundPosition: 'center',
+							backgroundSize: 'cover',
+							backgroundRepeat: 'no-repeat',
+							height: { md: 0, sm: 0, xs: 0 },
+							width: '100%',
+							paddingTop: { md: '75%', sm: '75%', xs: '56.25%' }
+						}}></Box>
+				</Grid>
+				<Grid
+					item
+					md={6}
+					sm={12}
+					xs={12}
+					sx={{
+						display: 'flex',
+						flexDirection: 'column',
+						order: { xs: 1, md: 2 },
+						alignItems: { md: 'flex-start', sm: 'center', xs: 'center' },
+						justifyContent: 'center',
+						width: { sm: '75%', xs: '100%' },
+						height: { md: '100%', sm: '50%', xs: 'auto' },
+						py: { md: '50px' },
+						pl: { md: '50px' },
+						px: { xs: '20px' },
+						color: '#f9f9f9'
+					}}>
+					<Typography variant='h4' sx={{ fontFamily: 'Avenir Roman,sans-serif', mb: '30px' }}>
+						Stream Disney's Cruella for S$38.98 with a Disney+ subscription
+					</Typography>
+					<Box sx={{ mb: '24px' }}>
+						<Typography sx={{ color: 'hsla(0,0%,75.3%,.8)', fontSize: { md: '24px' }, lineHeight: 1.5 }}>
+							See Disney's Cruella before it's available to all Disney+ subscribers on 27 August. Watch as many times as
+							you like with Premier Access for S$38.98 and your Disney+ subscription.{' '}
+							<Typography
+								sx={{ display: 'inline', color: '#f9f9f9', textDecoration: 'underline', fontSize: { md: '24px' } }}>
+								{' '}
+								learn more
+							</Typography>
+						</Typography>
+					</Box>
+					<Button
+						sx={{
+							width: { md: '100%', sm: '320px', xs: '320px' },
+							bgcolor: '#0063e5',
+							color: '#f9f9f9',
+							py: '14px',
+							px: '12px',
+							maxWidth: '320px',
+
+							'& .MuiButton-label': {
+								fontFamily: 'Avenir Roman,sans-serif',
+								fontSize: '16px',
+								letterSpacing: '0.8px',
+								fontWeight: 'bold'
+							},
+							'&:hover,&:active': {
+								bgcolor: '#0483ee'
+							}
+						}}>
+						sign up now
+					</Button>
+				</Grid>
 			</Grid>
 		</Grid>
 	);
