@@ -2,6 +2,29 @@ import React from 'react';
 import { Grid, Box, Avatar, Typography, Button, Divider } from '@material-ui/core';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useTheme } from '@material-ui/core/styles';
+const stream_gallery = [
+	{ label: 'WandaVison', url: './images/WandaVIsion_MLP_en-SG.jpg' },
+	{ label: 'Mandalorian', url: './images/The_Mandalorian_EMEA_UKI.png' },
+	{ label: 'Hamilton', url: './images/Hamilton_MLP_en-SG.jpg' },
+	{ label: 'EndGame', url: './images/AvengersEndgame_MLP_en-SG.jpg' },
+	{ label: 'BlackPanther', url: './images/BlackPanther_MLP_en-SG.jpg' },
+	{ label: 'TheRiseOfSkyWalker', url: './images/StarWars_RiseOfTheSkywalker_MLP_en-SG.jpg' },
+	{ label: 'Soul', url: './images/Soul_EN.jpg' },
+	{ label: 'Mulan', url: './images/Mulan2020_MLP_en-SG.jpg' },
+	{ label: 'Forzen2', url: './images/Frozen2_MLP_en-SG.jpg' }
+];
+
+const second_gallery = [
+	{ label: 'DeadPool2', url: './images/film_pic/Deadpool2_MLP_en-SG.jpg' },
+	{ label: 'Kingsman', url: './images/film_pic/Kingsman_TheGoldenCircle_MLP_en-SG.jpg' },
+	{ label: 'WarForPlantApes', url: './images/film_pic/WarOfThePlanetOfApes_MLP_en-SG.jpg' },
+	{ label: 'GreysAnatomy', url: './images/film_pic/GreysAnatomy_MLP_en-SG.jpg' },
+	{ label: 'BigSky', url: './images/film_pic/BigSky_MLP_en-SG.jpg' },
+	{ label: 'HowImetYourMother', url: './images/film_pic/HowIMetYourMother_MLP_en-SG.jpg' },
+	{ label: 'MazeRunner', url: './images/film_pic/MazeRunner_TheDeathCure_MLP_en-SG.jpg' },
+	{ label: '24', url: './images/film_pic/24_MLP_en-SG.jpg' },
+	{ label: 'TheSimpsons', url: './images/film_pic/UKI_The_Simpsons_Tile.png' }
+];
 const Home = () => {
 	const theme = useTheme();
 	const below_960 = useMediaQuery(theme.breakpoints.down('md'));
@@ -314,6 +337,150 @@ const Home = () => {
 						}}>
 						sign up now
 					</Button>
+				</Grid>
+			</Grid>
+			<Grid
+				item
+				container
+				md={12}
+				sm={12}
+				xs={12}
+				sx={{
+					display: 'flex',
+					height: '100%',
+
+					flexDirection: { md: 'row', sm: 'row', xs: 'row' },
+
+					alignItems: { md: 'center', sm: 'center', xs: 'center' },
+					backgroundColor: '#040714',
+					maxWidth: '1440px',
+					my: { md: 'auto' },
+					p: { md: '40px', xs: '20px' }
+				}}>
+				<Grid
+					item
+					md={6}
+					sm={12}
+					xs={12}
+					sx={{
+						display: 'flex',
+						alignItems: 'center',
+						justifyContent: 'center',
+						order: { xs: 2, md: 2 },
+						p: { md: 0, sm: '40px', xs: '20px' }
+					}}>
+					<Box
+						sx={{
+							backgroundImage: 'url(./images/Wandavision_4DEVICE_Module_Desktop_v2-6.png)',
+							backgroundPosition: 'center',
+							backgroundSize: 'cover',
+							backgroundRepeat: 'no-repeat',
+							height: { md: 0, sm: 0, xs: 0 },
+							width: '100%',
+							paddingTop: { md: '75%', sm: '75%', xs: '56.25%' }
+						}}></Box>
+				</Grid>
+				<Grid
+					item
+					md={6}
+					sm={12}
+					xs={12}
+					sx={{
+						display: 'flex',
+						flexDirection: 'column',
+						order: { xs: 1, md: 1 },
+						alignItems: { md: 'flex-start', sm: 'center', xs: 'center' },
+						justifyContent: 'center',
+						width: { sm: '75%', xs: '100%' },
+						height: { md: '100%', sm: '50%', xs: 'auto' },
+						py: { md: '50px' },
+						pl: { md: '50px' },
+						px: { xs: '20px' },
+						color: '#f9f9f9'
+					}}>
+					<Typography variant='h4' sx={{ fontFamily: 'Avenir Roman,sans-serif', mb: '30px' }}>
+						Watch the way you want.
+					</Typography>
+					<Box sx={{ mb: '24px' }}>
+						<Typography sx={{ color: 'hsla(0,0%,75.3%,.8)', fontSize: { md: '24px' }, lineHeight: 1.5, mb: '20px' }}>
+							Enjoy the big screen experience on your TV, with an ever-growing selection of titles in stunning 4K*.
+							Download any show on your mobile or tablet to watch on the go. Plus, you can stream on four screens at
+							once and have up to 7 profiles for a personalised viewing experience, so everyone will be happy. Enjoy all
+							of these features and more at no extra cost.
+						</Typography>
+						<Typography variant='h6'>*Compatible equipment required.</Typography>
+					</Box>
+				</Grid>
+			</Grid>
+			{/* Stream Disney+ Originals and blockbuster films. */}
+			<Grid item container sx={{ backgroundColor: '#040714', justifyContent: 'center', alignItems: 'flex-start' }}>
+				<Grid item sx={{ textAlign: 'center', mt: '60px' }}>
+					<Typography variant='h4' sx={{ fontFamily: 'Avenir Roman,sans-serif', color: '#f9f9f9', mb: '30px' }}>
+						Stream Disney+ Originals and blockbuster films.
+					</Typography>
+					<Typography
+						variant='h6'
+						sx={{ color: 'hsla(0,0%,75.3%,.8)', fontSize: { md: '24px' }, lineHeight: 1.5, mb: '20px' }}>
+						Discover exclusive Disney+ Originals you can’t find anywhere else and enjoy the biggest hit movies from
+						Disney, Pixar, Marvel, Star Wars and more.
+					</Typography>
+				</Grid>
+				{/*Image gallery */}
+				<Grid item container xs={12} sx={{ px: '40px', py: '60px' }} spacing={4}>
+					{/* <Grid item md={4} sm={6} xs={12}>
+						<Box
+							sx={{
+								height: 0,
+								paddingTop: '56.75%',
+								backgroundImage: 'url(./images/WandaVIsion_MLP_en-SG.jpg)',
+								backgroundSize: 'cover',
+								backgroundPosition: 'center',
+								backgroundRepeat: 'no-repeat'
+							}}></Box>
+					</Grid> */}
+					{stream_gallery.map((item) => (
+						<Grid key={item.label} item md={4} sm={6} xs={12}>
+							<Box
+								sx={{
+									height: 0,
+									paddingTop: '56.75%',
+									backgroundImage: `url(${item.url})`,
+									backgroundSize: 'cover',
+									backgroundPosition: 'center',
+									backgroundRepeat: 'no-repeat'
+								}}></Box>
+						</Grid>
+					))}
+				</Grid>
+			</Grid>
+			{/*star brings you entertainment for every mood */}
+			<Grid item container sx={{ backgroundColor: '#040714', justifyContent: 'center', alignItems: 'flex-start' }}>
+				<Grid item sx={{ textAlign: 'center', mt: '60px' }}>
+					<Typography variant='h4' sx={{ fontFamily: 'Avenir Roman,sans-serif', color: '#f9f9f9', mb: '30px' }}>
+						Star brings you entertainment for every mood.
+					</Typography>
+					<Typography
+						variant='h6'
+						sx={{ color: 'hsla(0,0%,75.3%,.8)', fontSize: { md: '24px' }, lineHeight: 1.5, mb: '20px' }}>
+						With thousands of hours of entertainment, from favourites to brand-new originals and exclusives, Star has
+						something for every moment and every mood.
+					</Typography>
+				</Grid>
+				{/*Image gallery */}
+				<Grid item container xs={12} sx={{ px: '40px', py: '60px' }} spacing={4}>
+					{second_gallery.map((item) => (
+						<Grid key={item.label} item md={4} sm={6} xs={12}>
+							<Box
+								sx={{
+									height: 0,
+									paddingTop: '56.75%',
+									backgroundImage: `url(${item.url})`,
+									backgroundSize: 'cover',
+									backgroundPosition: 'center',
+									backgroundRepeat: 'no-repeat'
+								}}></Box>
+						</Grid>
+					))}
 				</Grid>
 			</Grid>
 		</Grid>
