@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/disney-plus-UI-clone/static/js/main.5d21022e.chunk.js",
+    "main.js.map": "/disney-plus-UI-clone/static/js/main.5d21022e.chunk.js.map",
+    "runtime-main.js": "/disney-plus-UI-clone/static/js/runtime-main.43c70a79.js",
+    "runtime-main.js.map": "/disney-plus-UI-clone/static/js/runtime-main.43c70a79.js.map",
+    "static/js/2.b519c685.chunk.js": "/disney-plus-UI-clone/static/js/2.b519c685.chunk.js",
+    "static/js/2.b519c685.chunk.js.map": "/disney-plus-UI-clone/static/js/2.b519c685.chunk.js.map",
+    "index.html": "/disney-plus-UI-clone/index.html",
+    "static/js/2.b519c685.chunk.js.LICENSE.txt": "/disney-plus-UI-clone/static/js/2.b519c685.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.43c70a79.js",
+    "static/js/2.b519c685.chunk.js",
+    "static/js/main.5d21022e.chunk.js"
+  ]
+}
