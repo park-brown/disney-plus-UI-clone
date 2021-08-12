@@ -102,7 +102,9 @@ const Home = () => {
 										mb: { md: '0px', sm: '8px', xs: '8px' }
 									}}>
 									S$11.98{' '}
-									<Typography sx={{ display: 'inline-block', fontWeight: 400, opacity: 0.7 }}>| Month</Typography>{' '}
+									<Typography sx={{ display: 'inline-block', fontWeight: 400, opacity: 0.7 }} component='span'>
+										| Month
+									</Typography>{' '}
 								</Typography>
 								<Button
 									sx={{
@@ -148,7 +150,9 @@ const Home = () => {
 										mb: '8px'
 									}}>
 									S$119.98{' '}
-									<Typography sx={{ display: 'inline-block', fontWeight: 400, opacity: 0.7 }}>| Year</Typography>{' '}
+									<Typography sx={{ display: 'inline-block', fontWeight: 400, opacity: 0.7 }} component='span'>
+										| Year
+									</Typography>{' '}
 								</Typography>
 								<Typography sx={{ mb: '24px', fontWeight: 400, opacity: 0.7, color: '#f9f9f9' }}>
 									Save over 15%*
@@ -179,7 +183,7 @@ const Home = () => {
 						<Box>
 							<Typography sx={{ display: 'inline', color: 'hsla(0,0%,75.3%,.8)', fontSize: '10px' }}>
 								Stream Disney's Cruella with Premier Access for an additional fee.{' '}
-								<Typography sx={{ display: 'inline', fontSize: '10px' }}>
+								<Typography sx={{ display: 'inline', fontSize: '10px' }} component='span'>
 									Subscription required for both monthly and yearly plans. *Savings compared to 12 months of the monthly
 									subscription price.
 								</Typography>
@@ -310,6 +314,7 @@ const Home = () => {
 							See Disney's Cruella before it's available to all Disney+ subscribers on 27 August. Watch as many times as
 							you like with Premier Access for S$38.98 and your Disney+ subscription.{' '}
 							<Typography
+								component='span'
 								sx={{ display: 'inline', color: '#f9f9f9', textDecoration: 'underline', fontSize: { md: '24px' } }}>
 								{' '}
 								learn more

@@ -7,7 +7,6 @@ import Fade from '@material-ui/core/Fade';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container';
 
 import Button from '@material-ui/core/Button';
 import Avatar from '@material-ui/core/Avatar';
